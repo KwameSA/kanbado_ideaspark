@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanba-DO</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>Kanba-DO<img src="/images/notes.png" /></h2>
+        <div class="do-input">
+          <input type="text" id="input-box" placeholder="Enter Your Text Here" />
+          <button onclick="addEntry()">ADD</button>
+        </div>
+        <div class="error-message" id="error-message">Enter something to be accomplished!!</div>
+        <ul id="list-container">
+          <!-- <li class="checked">TASK 0</li>
+          <li>TASK 1</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
