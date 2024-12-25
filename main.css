@@ -38,15 +38,38 @@
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.todo-app h2 {
+.header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.todo-app h2 img {
+.header h2 {
+  display: flex;
+  align-items: center;
+}
+
+.header h2 img {
   width: 20px;
   margin-left: 10px;
+}
+
+.sort-option {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.sort-option label {
+  margin-right: 5px;
+  justify-content: right;
+}
+
+.sort-option select {
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  background-color: rgba(217, 211, 206, 0.5);
 }
 
 .todo-app:hover {
