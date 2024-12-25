@@ -9,16 +9,23 @@
   <body>
     <div class="container">
       <div class="todo-app">
-        <h2>Kanba-DO<img src="images/notes.png" /></h2>
+        <div class="header">
+          <h2>Kanba-DO<img src="images/notes.png" /></h2>
+          <div class="sort-option">
+            <label for="sort-options">Sort By:</label>
+            <select id="sort-options">
+              <option value="date">Date Added</option>
+              <option value="alphabetical">Alphabetical</option>
+              <option value="checked">Checked Status</option>
+            </select>
+          </div>
+        </div>
         <div class="do-input">
           <input type="text" id="input-box" placeholder="Enter Your Text Here" />
           <button onclick="addEntry()">ADD</button>
         </div>
         <div class="error-message" id="error-message">Enter something to be accomplished!!</div>
-        <ul id="list-container">
-          <!-- <li class="checked">TASK 0</li>
-          <li>TASK 1</li> -->
-        </ul>
+        <ul id="list-container"></ul>
       </div>
     </div>
     <script src="script.js"></script>
